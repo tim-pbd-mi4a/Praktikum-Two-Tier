@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "lato", sans-serif;
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.blue {
+  background: #2274a5;
+}
+.green {
+  background: #32936f;
+}
+.yellow {
+  background: #ffbf00;
+}
+.red {
+  background: #e83f6f;
+}
+.white {
+  background: #fff;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 40px 0;
+}
+.title-a {
+  display: block;
+  text-align: center;
+  padding: 40px 0;
+}
+h2 {
+  font-size: 26px;
+}
+.muted {
+  padding: 0 0 0 10px;
+  font-size: 18px;
+  font-style: italic;
+  text-align: center;
+}
+.msg {
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #e83f6f;
+}
+.btn {
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  outline: 0;
+  padding: 15px;
+  text-transform: uppercase;
+  width: 100%;
+  text-decoration: none;
+}
+.responsive-table {
+  padding: 0;
+}
+.responsive-table li {
+  border-radius: 3px;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.responsive-table .button-input {
+  padding: 0;
+}
+.responsive-table .btn-bot {
+  justify-content: flex-end;
+}
+.responsive-table .btn-bot a:first-child {
+  margin-right: 10px;
+}
+.responsive-table .table-header {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.responsive-table .table-row {
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+.responsive-table .col-1 {
+  flex-basis: 10%;
+}
+.responsive-table .col-2 {
+  flex-basis: 25%;
+}
+.responsive-table .col-3 {
+  flex-basis: 25%;
+}
+.responsive-table .col-4 {
+  flex-basis: 25%;
+}
+.responsive-table .col-5 {
+  flex-basis: 25%;
+}
+.responsive-table .table-row .col {
+  display: flex;
+  align-items: center;
+}
+.responsive-table .aksi .edit {
+  margin-right: 8px;
+  width: auto;
+}
+.form {
+  background: #ffffff;
+  max-width: 300px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+.form input {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.field-icon {
+  float: right;
+  margin-right: 12px;
+  margin-top: -46px;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  color: #757575;
+}
+.inline-radio {
+  text-align: left;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  display: flex;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.inline-radio div {
+  cursor: pointer;
+  background: #f2f2f2;
+  position: relative;
+  flex: auto;
+}
+.inline-radio .akre {
+  cursor: default;
+  color: #757575;
+  padding: 15px;
+  position: initial;
+  align-items: center;
+}
+.inline-radio input {
+  cursor: pointer;
+  color: #757575;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+}
+.inline-radio label {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #b6b6b6;
+  width: 100%;
+  height: 100%;
+  background: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.inline-radio input:checked + label {
+  background: #32936f;
+  color: #fff;
+}
+
+.form .btn {
+  margin-bottom: 5px;
+}
+.form input[type="submit"] {
+  background: #2274a5;
+}
+
+@media all and (max-width: 767px) {
+  .title {
+    display: block;
+  }
+  .title h2 {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .title .muted {
+    padding: 0;
+  }
+  .responsive-table .table-header {
+    display: none;
+  }
+  .responsive-table li {
+    display: block;
+  }
+  .responsive-table .button-input {
+    text-align: center;
+  }
+  .responsive-table .btn-bot a:first-child {
+    margin: 0;
+  }
+  .responsive-table .btn-bot .blue {
+    margin-bottom: 15px;
+  }
+  .responsive-table .col {
+    flex-basis: 100%;
+  }
+  .responsive-table .col {
+    display: flex;
+    padding: 10px 0;
+  }
+  .responsive-table .col:before {
+    font-weight: bold;
+    color: #32936f;
+    padding-right: 10px;
+    content: attr(data-label);
+    flex-basis: 50%;
+    text-align: right;
+  }
+  .responsive-table .aksi::before {
+    display: none;
+  }
+  .responsive-table .aksi {
+    justify-content: center;
+  }
+}
