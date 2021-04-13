@@ -2,7 +2,10 @@
 
 Hasil praktikum PBD pertemuan #5-7 - Aplikasi Basis Data Arsitektur Two Tier (2-tier).
 
-Mata Kuliah Pemrograman Basis Data
+Mata Kuliah Pemrograman Basis Data dengan dosen pengampu:
+
+1. Eko Win Kenali, S.Kom., M.Cs.
+2. Agiska Ria Supriyatna, S.Si, MTI
 
 ## :handshake: TIM PBD
 
