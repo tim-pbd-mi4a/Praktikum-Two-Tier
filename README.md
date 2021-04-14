@@ -16,3 +16,9 @@ Mata Kuliah Pemrograman Basis Data dengan dosen pengampu:
 - [Ika Ariani Annisa](https://github.com/ikaearinisae)
 - [Irfandi Iqbal Abimanyu](https://github.com/irfnd) **(Ketua)**
 - [Leo Pradana](https://github.com/leopradana68)
+
+## :pen: Note
+
+Username : irfnd
+
+Password : irfnd
