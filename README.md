@@ -19,6 +19,5 @@ Mata Kuliah Pemrograman Basis Data dengan dosen pengampu:
 
 ## :pen: Note
 
-Username : irfnd
-
-Password : irfnd
+- Username : **irfnd**
+- Password : **irfnd**
