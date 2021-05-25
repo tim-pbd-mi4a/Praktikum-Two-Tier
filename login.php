@@ -4,7 +4,7 @@ include("./config/connection.php");
 if(isset($_POST["submit"])) {
   $conn = open_connection();
   $username = $_POST["username"];
-  $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
+  $password = password_hash($_POST["password"], PASSWORD_BCRYPT);
   $query = "select * from dt_user where username='$username'";
   $hasil = mysqli_query($conn, $query);
   if($username != "" && $password != "") {
@@ -40,7 +40,7 @@ if(isset($_POST["submit"])) {
     <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
     <link rel='stylesheet' href='./public/style.css'>
     <link rel='stylesheet' href='./public/fontawesome/css/all.css'/>
-    <title>Topik 1 - PBD CRUD 1 TIER</title>
+    <title>Login - PBD CRUD 2 TIER</title>
   </head>
   <body>
     <div class='container'>
@@ -55,6 +55,7 @@ if(isset($_POST["submit"])) {
           <i class="fas fa-eye fa-sm field-icon toggle-password"></i>
           <input type='submit' class='btn blue' name='submit' value='LOGIN'>
         </form>
+        <a href="./register.php"><button class="btn" id="register">Register</button></a>
       </div>
     </div>
     <script src="./public/jquery-3.6.0.min.js"></script>

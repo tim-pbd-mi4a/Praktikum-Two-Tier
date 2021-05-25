@@ -41,7 +41,7 @@ function read_data() {
         <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
         <link rel='stylesheet' href='../public/style.css'>
         <link rel='stylesheet' href='../public/fontawesome/css/all.css'/>
-        <title>Topik 1 - PBD CRUD 1 TIER</title>
+        <title>Topik 2 - PBD CRUD 2 TIER</title>
       </head>
       <body>
         <div class='container'>
@@ -78,7 +78,7 @@ function read_data() {
 function logout() {
   session_start();
   session_destroy();
-  header("location:../login.php");
+  header("location:../index.php");
 }
 
 ?>

@@ -117,6 +117,7 @@ h2 {
   margin-right: 8px;
   width: auto;
 }
+
 .form {
   background: #ffffff;
   max-width: 300px;
@@ -200,8 +201,39 @@ h2 {
 .form .btn {
   margin-bottom: 5px;
 }
+
+#register {
+  color: #757575;
+}
+
 .form input[type="submit"] {
   background: #2274a5;
+}
+
+.requirements-list,
+.passSuccess {
+  background-color: #f2f2f2;
+  color: #757575;
+  padding: 15px;
+  margin: 0 0 15px 0;
+  border-radius: 3px;
+}
+
+.passSuccess {
+  background-color: #32936f;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.passSuccess i {
+  margin: 0 5px 0 0;
+}
+
+.requirements {
+  padding: 0;
+  list-style: none;
 }
 
 @media all and (max-width: 767px) {

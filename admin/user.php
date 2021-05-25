@@ -64,7 +64,7 @@ function read_data() {
         <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
         <link rel='stylesheet' href='../public/style.css'>
         <link rel='stylesheet' href='../public/fontawesome/css/all.css'/>
-        <title>Topik 1 - PBD CRUD 1 TIER</title>
+        <title>Topik 2 - PBD CRUD 2 TIER</title>
       </head>
       <body>
         <div class='container'>
@@ -122,7 +122,7 @@ function input_data() {
         <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
         <link rel='stylesheet' href='../public/style.css'>
         <link rel='stylesheet' href='../public/fontawesome/css/all.css'/>
-        <title>Topik 1 - PBD CRUD 1 TIER</title>
+        <title>Topik 2 - PBD CRUD 2 TIER</title>
       </head>
       <body>
         <div class='container'>
@@ -167,7 +167,7 @@ function edit_data($id) {
       <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
       <link rel='stylesheet' href='../public/style.css'>
       <link rel='stylesheet' href='../public/fontawesome/css/all.css'/>
-      <title>Topik 1 - PBD CRUD 1 TIER</title>
+      <title>Topik 2 - PBD CRUD 2 TIER</title>
     </head>
     <body>
       <div class='container'>
@@ -213,7 +213,7 @@ function hapus_data($id) {
       <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
       <link rel='stylesheet' href='../public/style.css'>
       <link rel='stylesheet' href='../public/fontawesome/css/all.css'/>
-      <title>Topik 1 - PBD CRUD 1 TIER</title>
+      <title>Topik 2 - PBD CRUD 2 TIER</title>
     </head>
     <body>
       <div class='container'>
@@ -243,7 +243,7 @@ function hapus_data($id) {
 function create_user() {
   global $hub;
   global $_POST;
-  $pass = password_hash($_POST["password"], PASSWORD_DEFAULT);
+  $pass = password_hash($_POST["password"], PASSWORD_BCRYPT);
   $query = "INSERT INTO dt_user (username, password, role) VALUES ('".$_POST["username"]."', '".$pass."', '".$_POST["role"]."')";
   mysqli_query($hub, $query) or die(mysqli_error());
 }
@@ -251,7 +251,7 @@ function create_user() {
 function update_user() {
   global $hub;
   global $_POST;
-  $pass = password_hash($_POST["password"], PASSWORD_DEFAULT);
+  $pass = password_hash($_POST["password"], PASSWORD_BCRYPT);
   $query = "UPDATE dt_user SET username='".$_POST["username"]."', password='".$pass."', role='".$_POST["role"]."' WHERE id=".$_POST["id"];
   mysqli_query($hub, $query) or die(mysqli_error());
 }
@@ -266,7 +266,7 @@ function delete_user() {
 function logout() {
   session_start();
   session_destroy();
-  header("location:../login.php");
+  header("location:../index.php");
 }
 
 ?>
