@@ -54,7 +54,7 @@ CREATE TABLE `dt_user` (
 --
 
 INSERT INTO `dt_user` (`id`, `username`, `password`, `role`) VALUES
-(1, 'irfnd', '$2y$10$muNG/0MESd6RXo.vBRSwKOuwJz0B5U8qG5vDzIsYKKQ9s3tTOTYye', 'Admin');
+(1, 'irfnd', '$2y$10$f8S/R9qVUot7cZGJJ2SXXexQUANb6kN2IM7b5YzcoJgGtTEr1NV0.', 'Admin');
 
 --
 -- Indexes for dumped tables
